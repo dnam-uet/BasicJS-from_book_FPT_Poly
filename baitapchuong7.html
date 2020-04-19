@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var star = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+		var starOther = ["Ursa Minor","Taurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+		alert("Length of star : " + star.length + "\n Length of starOther : " + starOther.length);
+		function findStar(argumentStar){
+			for(var i=0;i<star.length;i++){
+				if (star[i] == argumentStar) {
+					return i;
+				}
+			}
+			return -1;
+		}
+	</script>
+</head>
+<body>
+	<p id = "data"></p>
+	<script type="text/javascript">
+		var variable = prompt("Mời bạn nhập tên ngôi sao");
+		var output = findStar(variable);
+		var dataStar = document.getElementById("data");
+		if(output >= 0) dataStar.innerHTML = "Chòm sao cần tìm là : " + starOther[output];
+		else dataStar.innerHTML = "Ngôi sao trên không tồn tại";
+	</script>
+</body>
+</html>

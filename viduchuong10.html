@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tên thẻ</title>
+	<script type="text/javascript">
+		function changeColor(){
+			var a1 = document.getElementsByTagName("td");
+			for(var i=0;i<a1.length;i++){
+				a1[i].style.background = "green";
+			}
+		}
+	</script>
+</head>
+<body>
+	<table id="mytable" border="1">
+		<tr>
+			<td>Cột trái</td>
+			<td>Cột phải</td>
+		</tr>
+		<tr>
+			<td>Cột trái</td>
+			<td>Cột phải</td>
+		</tr>
+		<tr>
+			<td>Cột trái</td>
+			<td>Cột phải</td>
+		</tr>
+	</table>
+	<a href="#" onclick="return changeColor();">Nhấn vào để đổi màu</a>
+</body>
+</html>

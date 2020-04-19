@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hiển thị các thuộc tính trong trang web</title>
+	<script type="text/javascript">
+		function showattribs(){
+			var e = document.getElementById("abc");
+			var elemList = "";
+			for(var element in e){
+				var attrib = e.getAttribute(element);
+				elemList = elemList + element + ": ";
+			}
+			alert(elemList);
+		}
+	</script>
+</head>
+<body>
+	<a href="http://www.facebook.com" id ="abc" onclick="return showattribs();">Hi cac cau</a>
+</body>
+</html>

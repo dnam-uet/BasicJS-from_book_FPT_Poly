@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="http:www.facebook.com">click here</a>
+	<p id ="x">Hello everybody</p>
+	<script type="text/javascript">
+		var temp = document.getElemenstByTagName("p");
+		temp[0].appendChild(document.createTextNode("Text changed"));
+		var flag = document.getElemenstByTagName("a");
+		flag[0].setAttribute("href" , "#");
+		// var hehe = document.getElementById("x");
+		// hehe.innerHTML = "Text changed";
+	</script>
+</body>
+</html>

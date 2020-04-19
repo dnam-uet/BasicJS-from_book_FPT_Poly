@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>~~~ Missing for you, So much... ~~~</title>
+
+
+
+<style type="text/css">
+
+body{
+
+ padding:0px;
+
+ margin:0px;
+
+}
+
+html, body {
+
+height: 100%;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+img#bg {
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:100%;
+
+z-index:-1;
+
+}
+
+#content{
+
+position:absolute;
+
+z-index:1;
+
+right:0px;
+
+}
+
+#background {
+
+    width: 100%; 
+
+    height: 100%; 
+
+    position: absolute; 
+
+    left: 0px; 
+
+    top: 0px; 
+
+    z-index: 0;
+
+}
+
+
+
+.stretch {
+
+    height:100%;
+
+}
+
+
+
+</style>
+
+
+
+<script language=javascript >
+
+
+
+title_tmp1=document.title
+
+
+
+if (title_tmp1.indexOf(">>")!=-1){
+
+
+
+title_tmp2=title_tmp1.split(">>");
+
+
+
+title_last="*~*"+title_tmp2[1];
+
+
+
+title_last=title_last + "*~*" + title_tmp2[2];
+
+
+
+}else{
+
+
+
+ 
+
+
+
+if (title_tmp1.indexOf("*~*")!=-1){
+
+
+
+title_tmp2=title_tmp1.split("*~*");
+
+
+
+title_last="*~*"+title_tmp2[1];
+
+
+
+if (title_last=="*~*"){title_last="*~*"};
+
+
+
+if (title_last=="*~*"){title_last="*~*"};
+
+
+
+}
+
+
+
+else { title_last=" Missing for you, So much... "}
+
+
+
+}
+
+
+
+title_new=""+title_last+""
+
+
+
+step=0
+
+
+
+function flash_title()
+
+
+
+{
+
+
+
+step++
+
+
+
+if (step==8) {step=1}
+
+
+
+if (step==1) {document.title='[~~~~*'+title_new+'*~~~~]'}
+
+
+
+if (step==2) {document.title='[~~~*~'+title_new+'-*~~~]'}
+
+
+
+if (step==3) {document.title='[~~*~~'+title_new+'~~*~~]'}
+
+
+
+if (step==4) {document.title='[~*~~~'+title_new+'~~~*~]'}
+
+
+
+if (step==5) {document.title='[~~*~~'+title_new+'~~*~~]'}
+
+
+
+if (step==6) {document.title='[~~~*~'+title_new+'~*~~~]'}
+
+
+
+if (step==7) {document.title='[~~~~*'+title_new+'*~~~~]'}
+
+
+
+setTimeout("flash_title()",180);
+
+
+
+}
+
+
+
+flash_title()
+
+</script> 
+
+<SCRIPT language=javascript>
+
+ var kt=false
+
+ alert('Ê ! anh có một câu hỏi mún hỏi em nè ^^ !')
+
+ alert('Trả lời cho chính xác nghen chưa ! ')
+
+ alert('Câu hỏi cũng nhẹ nhàng thôi: ')
+
+ alert('Đó là ...')
+
+function move()
+
+{
+
+ var x = Math.random()*300
+
+ var y = Math.random()*500
+
+ var left=x+'px'
+
+ var top=y+'px'
+
+ document.getElementById('lbNo').style.left=left
+
+ document.getElementById('lbNo').style.top=top
+
+}
+
+function dongy()
+
+{
+
+ if(kt==false)
+
+ {
+
+ alert('Oa! Iu à!')
+
+ alert('Hỏi thế thôi, thật ra anh bít em iu từ lâu rồi ')
+
+ alert('Iu mình nhiều lém hả?')
+
+ alert('Bít mà, iu cực nhìu lun')
+
+ alert('Thực tình anh cũng iu em lém ^^')
+
+ alert('Iu từ lúc mới nhìn thấy em í ^^~')
+
+ alert('I love U so much :X')
+
+        window.location.href="ymsgr:sendIM?hoanghaivnn_hp&m=I LOVE YOU :x :x :X";       
+
+ kt=true 
+
+ } 
+
+ else
+
+ {
+
+ alert('Goodbye mah love^^')
+
+ }
+
+}
+
+</SCRIPT>
+
+
+
+</head>
+
+
+
+<body onLoad="javascript:teclear();">
+
+
+
+<div id="Layer1" style="left: 0pt; position: absolute; top: 0pt; z-index: 1;"> <embed align="right" height="500px" src="bg.swf" width="760" wmode="transparent"></embed></div>
+
+<div id="background">
+
+    <img src="bg.jpg" alt="background image" class="stretch" />
+
+</div>
+
+
+
+
+
+<CENTER>
+
+<DIV id=lbYes style="LEFT: 100px; POSITION: absolute; TOP: 210px;color:#FF0000;">
+
+<h1>Em Có Yêu Anh Không ?</h1>
+
+</DIV>
+
+<DIV id=lbYes style="LEFT: 100px; POSITION: absolute; TOP: 190px;z-index:2;"><INPUT style="CURSOR: pointer; COLOR: rgb(0,0,0)" onclick=dongy() type=button value="Yes :X "> 
+
+</DIV>
+
+<DIV id=lbNo style="LEFT: 220px; POSITION: absolute; TOP: 190px;z-index:2;"><INPUT onmousemove=move() style="CURSOR: pointer; COLOR: rgb(0,0,0)" type=button value="Hix, còn lâu "> 
+
+</DIV>
+
+</CENTER>
+
+
+
+<table id="content" width="60%" cellpadding="30" align="right" height="100%">
+
+<tr>
+
+<td valign="middle" style="color:#FF0000;font-weight:bold;" height="100%">
+
+
+
+<DIV class="layermensaje" id="ttecleado"></DIV>
+
+<SCRIPT language="javascript" type="text/javascript">
+
+
+
+
+
+mensaje= 
+
+
+
+
+
+'<font size="3" face="Courier New" color="#2B65EC">&nbsp;&nbsp;&nbsp;  Anh yêu  em... nhiều lắm ...<br></font>'+' <br>'+ 
+
+
+
+'<font color="#009933" size="3">Có những điều thật giản dị và dễ hiểu nhưng đôi khi trong cuộc sống, chúng ta lại phải mất cả một cuộc đời trải nghiệm mới nhận ra nó. Anh cứ  ngỡ mình đã yêu em vì  mái tóc dài, ánh mắt dịu hiền, hay nụ cười hồn nhiên.</font>                <br>           '+
+
+
+
+'<br>           '+
+
+
+
+'<font size="3"  color="#333333">Rồi thời gian trôi, có lúc anh lại thấy mình yêu em vì trái tim em nhân hậu, giọng nói dịu dàng ... Anh đã ấp ủ trong lòng và cố gắng suy nghĩ thật nhiều để có thể nói cho em biết  về những điều khiến Anh yêu Em.</font><br>'+
+
+
+
+'                    <br>'+
+
+
+
+'<font size="3" color="#ff3333">....và rồi ... anh ngồi đếm từng điều một ... 1...2...3... rồi 4...5...6.... bỗng anh thấy mình thật ngốc, bởi con số đó với anh sẽ là bất tận, anh yêu em vì quá nhiều lý do, cuối cùng thì...5...4...3...2… anh nhận ra rằng anh có thể yêu em vì bất cứ điều gì với lý do thật đơn giản …<br>"BỞI VÌ ANH YÊU EM…". Có lẽ nến, mưa, thảo nguyên và cả những dấu "..." sẽ mãi tồn tại và sống mãi <br>trong cuộc đời của anh! </font>  <br> <br>           '+
+
+
+
+'  <font size="3" color="#669933">  Vì trái tim anh đã thuộc về em... dẫu không thể nói hết được, nhưng<br> anh vẫn muốn làm tặng em trang web này!</font>'+
+
+'                    <br>'+
+
+'<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#669933">( °·.¸ °-:-</font> <font color="#ff3333">ßë¢äüşė</font> <font color="#333399">I</font> <font color="#ff00ff">£øvë</font> <font color="#333333">¥øů</font> <font color="#669933"> -:-° ¸.·° )</font><br>'+
+
+
+
+'<p align="left"> <font face="Courier New" color="#333333" size="3">Copyright 2010 by changtraicuibap™<br>Email:hoanghaivnn_hp@yahoo.com or Y!M: hoanghaivnn_hp</font></p>'
+
+
+
+
+
+
+
+line=0
+
+
+
+cursor='_'
+
+
+
+function teclear(){
+
+
+
+if(line==mensaje.length) cursor=''
+
+
+
+/*ttecleado.innerHTML=mensaje.substring(0,line)+cursor*/
+
+document.getElementById('ttecleado').innerHTML=mensaje.substring(0,line)+cursor
+
+
+
+if(line++<mensaje.length) setTimeout("teclear()",60) 
+
+
+
+}
+
+
+
+</SCRIPT>
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+<iframe src="http://www.nhaccuatui.com/mh/auto/m6W9Azywxxrz" width="0" height="0" frameborder="0" allowfullscreen></iframe>
+
+
+
+</body>
+
+</html>

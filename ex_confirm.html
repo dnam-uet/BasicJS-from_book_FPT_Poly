@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ví dụ sử dụng confirm</title>
+	<script type="text/javascript">
+		function playGame(answer){
+			if(answer){
+				alert("Chúng ta sẽ chơi ván nữa");
+			}
+			else alert("Chúng ta dừng được rồi");
+		}
+	</script>
+</head>
+<body>
+	<p id="dateField"></p>
+	<script type="text/javascript">
+		var confirmAnswer = confirm("Chúng ta chơi một ván nữa nhé ");
+		playGame(confirmAnswer);
+	</script>
+</body>
+</html>
